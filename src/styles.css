@@ -1,0 +1,94 @@
+.App {
+  background-color: #ffefd5;
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the to-do list container */
+.ToDoList {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffe0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffc107;
+  border-left: none;
+  border-right: none;
+}
+
+h2 {
+  text-align: center;
+  background-color: #ffd700;
+  color: #fff;
+  padding: 10px 0;
+  margin: -20px -20px 20px -20px;
+}
+
+input[type="text"],
+button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ffd700;
+  background-color: #fafad2;
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  background-color: #f08080;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fafad2;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-bottom: 2px dashed #ffd700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes tearAway {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(20deg) translateX(50px) translateY(-50px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(45deg) translateX(300px) translateY(-150px);
+    opacity: 0;
+  }
+}
+
+.tearingAway {
+  animation: tearAway 0.8s forwards;
+}
